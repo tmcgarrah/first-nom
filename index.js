@@ -1,7 +1,7 @@
 const emoji = require('node-emoji');
 const http = require('http');
 const server = http.createServer((req, res) => {
-  res.write(emoji.random().emoji);
+  res.write(emoji.random().emoji + \n);
   res.end();
 });
 
